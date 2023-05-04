@@ -1,0 +1,31 @@
+
+attributes {
+    velikost : maly stredni velky
+    srst : kratka dlouha bez
+    barva : cerny bily hnedy
+    spolecensky : ano ne
+}
+
+classes {
+    V
+    N
+    Q
+}
+
+objects {
+    1 Q maly dlouha cerny ne
+    2 Q velky dlouha bily ano
+    3 N velky bez cerny ne
+    4 N velky dlouha hnedy ano
+    5 V velky bez bily ne
+    6 Q velky bez hnedy ne
+    7 N velky kratka bily ano
+    8 Q stredni dlouha cerny ne
+    9 N maly kratka bily ne
+    10 N velky kratka cerny ne
+    11 N maly dlouha bily ano
+    12 N stredni bez cerny ne
+    13 N maly bez cerny ano
+    14 V stredni dlouha hnedy ano
+    15 N stredni dlouha bily ano
+}

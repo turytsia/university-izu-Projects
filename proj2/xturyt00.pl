@@ -26,7 +26,7 @@ VIN > 0,
 QUOT is VIN // 8, % Compute quotient
 REM is VIN mod 8, % Compute remainder
 octal(QUOT, REST), % Convert quotient to octal
-append(REST, [REM], OCT). % Combine remainder and quotient
+append_custom(REST, [REM], OCT). % Combine remainder and quotient
 
 % Pow cases
 pow(_,0,1).
@@ -43,5 +43,8 @@ num([H|T], RES) :-
     num(T, VAL),
     RES is H * K + VAL.
 
+append_custom([], List2, List2).
+append_custom([Head|Tail], List2, [Head|Result]) :-
+    append_custom(Tail, List2, Result).
 
 
