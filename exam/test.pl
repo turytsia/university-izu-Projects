@@ -1,0 +1,1 @@
+p(L,X) :- length(L,D), X is D // 2.
